@@ -8,6 +8,9 @@ const countReducer = (state, action) => {
     case 'INCREMENT':
       return {count: state.count + action.step}
 
+    case 'DECREMENT':
+      return {count: state.count - action.step}
+
     default: {
       throw new Error(`Unsopported action type> ${action.type}`)
     }
